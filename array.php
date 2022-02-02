@@ -1,32 +1,52 @@
 <?php
-    $a= array("Red","Yellow","Green","Blue");
-    foreach($a as $values)
+    $a=array(1,2,3,4,6,32,11);
+
+    // echo"<br>";
+    sort($a);
+    echo"<br>";
+    echo count ($a);
+    echo"<br>";
+    foreach($a as $val)
     {
-        echo "array is:- $values <br>";
-    }
-?>
-<?php
-    $a1= array("Red"=>"Apple","Yellow"=>"Mango","Green"=>"Grapes","Blue"=>"Bringle");
-    foreach($a1 as $key=> $values)
-    {
-        echo "array key is:- $key . and values is $values <br>";
-    }
-?>
-<?php
-    $b = array(array(1,2,3,4), array(4,5,6,2), array(7,8,9,1));
-    for($row=0; $row < 3; $row++){
-        for($col = 0; $col < 4; $col++){
-            echo $b[$row][$col]. "  ";
-        }
-        echo "<br>";
-    }
-    echo "<br>";
-    foreach($b as $v1){
-       
-        foreach($v1 as $v2){
-            echo $v2 . "  ";
-        }
+        echo $val;
         echo"<br>";
     }
-    echo $b[1][2];//output is 6
+    // print_r($a);
+    $ab=array(3,4,1,4,5,56,3);
+    $len = count($ab);
+    sort($ab);
+    for($i=0;$i<$len;$i++)
+    {
+        echo $ab[$i]. "<br>";
+    }
+    $ak= array("Ajay"=>"bir","Kalpana"=>"Sharma","Amit"=>"Bisht");
+    echo rsort($ab);
+    foreach($ak as $key=>$vall)
+    {
+        echo $key.$vall;
+        echo"<br>";
+    }
+    echo"<br>";
+    asort($ak);
+    foreach($ak as $key=> $vall)
+    {
+        echo $key.$vall;
+        echo"<br>";
+    }
+    echo"<br>";
+    arsort($ak);
+    foreach($ak as $key=>$vall)
+    {
+        echo $key.$vall;
+        echo"<br>";
+    }
+    echo"<br>";
+    krsort($ak);
+    foreach($ak as $key=>$vall)
+    {
+        echo $key.$vall;
+        echo"<br>";
+    }
+    echo"<br>";
+    
 ?>
